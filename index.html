@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FocusFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🚀 FocusFlow</h1>
+
+    <!-- Time Input -->
+    <div class="time-set">
+      <input type="number" id="minutesInput" placeholder="Minutes">
+      <input type="number" id="secondsInput" placeholder="Seconds">
+      <button onclick="setCustomTime()">Set Time</button>
+    </div>
+
+    <!-- Timer -->
+    <div class="timer">
+      <h2 id="time">00:00</h2>
+
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+
+      <button onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <!-- Task Input -->
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter task...">
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <button class="dark-btn" onclick="toggleDark()">🌙 Toggle Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
